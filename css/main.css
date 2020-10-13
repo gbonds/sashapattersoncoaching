@@ -1,83 +1,92 @@
+/* OVERRIDES */
+h1, h2, h3, h4, p, figure {
+    margin: 0;
+    /* overrides default margins */
+  }
+  
+  ul {
+    padding: 0;
+    /* overrides default padding on lists */
+  }
+
+
 /*** BASE STYLES ***/
 
 body {
     font-family: 'Source Sans Pro', sans-serif;
     color: #2b2b2b;
+    font-size: 16px;
 }
 
-/*** GRID ***/ 
 
-.full-width {
-    width: 1200px;
-    margin: 0 auto;
-    overflow: auto;
-}
-
-.half-width {
-    width: 600px;
-    float: left;
-}
-
-.third-width {
-    width: 400px;
-    float: left;
-}
-
-/** HEADER **/
+/* HEADER */
 
 header {
-    height: 800px;
+    width: 105%;
     background: url("../img/edward-howell-flower-buds.jpg");
     background-size: cover;
     background-position: center;
 }
 
-header h1 {
- padding: 65px 0 65px 25px;
+/*---------- NAVBAR ---------*/
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+.navbar-container h1 {
  font-family: 'Lora', serif;
  color: #bbc085;
- font-size: 30px;
+ font-size: 2em;
 }
 
-nav {
-    float: right;
-    padding: 75px 25px;
-}
-
-nav ul li {
-    display: inline-block;
+.navbar-container ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
 }
 
 nav ul li a {
     text-transform: uppercase;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1em;
     color: #828282;
-    padding-left: 80px;
+    margin-left: 15px;
 }
 
-header h2 {
-    width: 1000px;
-    clear: both;
+/*---------- HERO ---------*/
+
+.hero-container {
+    padding: 50px 50px 75px 50px;
+}
+
+.hero-container h2 {
+    width: 75%;
     font-family: 'Lora', serif;
-    font-size: 72px;
-    line-height: 80px;
+    font-size: 4.5em;
+    line-height: 1.5em;
     color: #9b9b9b;
-    padding: 20px 0 20px 25px;
 }
 
-header h2 span {
+.hero-container h2 span {
     color: #2b2b2b;
 }
 
-header h3 {
-    width: 1000px;
-    clear: both;
-    font-size: 28px;
-    line-height: 40px;
+.hero-container h3 {
+    width: 90%;
+    font-size: 2em;
+    line-height: 1.5em;
     font-weight: normal;
     color: #2b2b2b;
-    padding: 20px 0 20px 25px;
+    margin-top: 50px;
+}
+
+/* GENERAL SECTION STYLING */
+section {
+    padding: 50px;
 }
 
 /** ABOUT **/
