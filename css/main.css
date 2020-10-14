@@ -1,14 +1,14 @@
 /*** OVERRIDES ***/
+
 h1, h2, h3, h4, p, figure {
     margin: 0;
     /* overrides default margins */
-  }
-  
-  ul {
+}
+
+ul {
     padding: 0;
     /* overrides default padding on lists */
-  }
-
+}
 
 /*** BASE STYLES ***/
 
@@ -19,14 +19,26 @@ body {
     width: 100%;
 }
 
-
 /* HEADER */
 
 header {
-    background: url("../img/edward-howell-flower-buds.jpg");
-    background-size: cover;
-    background-position: center;
+    height: 700px;
 }
+
+header::after {
+    content: "";
+    background: url("../img/edward-howell-flower-buds_medium.jpg");
+    background-size: cover;
+    background-position: left;
+    height: 700px;
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+  }
 
 /*---------- NAVBAR ---------*/
 
@@ -38,9 +50,9 @@ header {
 }
 
 .navbar-container h1 {
- font-family: 'Lora', serif;
- color: #bbc085;
- font-size: 2em;
+    font-family: 'Lora', serif;
+    color: #bbc085;
+    font-size: 2em;
 }
 
 .navbar-container ul {
@@ -85,6 +97,7 @@ nav ul li a {
 }
 
 /*** GENERAL SECTION STYLING ***/
+
 section {
     padding: 50px;
 }
@@ -119,6 +132,7 @@ p {
 }
 
 /* WORK */
+
 #work {
     background-color: #f9ceb7;
 }
@@ -153,13 +167,16 @@ p {
 }
 
 /* FOOTER */
+
 /*---------- CONTACT ---------*/
+
 #contact {
     background-color: #ebebeb;
 }
 
 #contact .content-container {
-    padding: 50px; /* matches padding for sections */
+    padding: 50px;
+    /* matches padding for sections */
 }
 
 #contact .content-item {
@@ -177,7 +194,8 @@ p {
 
 #email-header {
     margin-top: 25px;
-    font-weight: 400; /* overrides default bold weight for h3 */
+    font-weight: 400;
+    /* overrides default bold weight for h3 */
 }
 
 #contact-info a {
@@ -215,58 +233,3 @@ p {
 #copyright {
     text-align: center;
 }
-
-
-
-/*--------------- OLD CODE TO BE UPDATED -------------------*/
-/*
-#contact-img { 
-    border: 12px solid #ffffff;
-}
-
-#contact img {
-    width: 100%;
-}
-
-
-#contact h2 {
-    font-family: 'Lora', serif;
-    font-size: 36px;
-    line-height: 44px;
-}
-
-#email-header {
-    font-size: 32px;
-    font-weight: 400; why do you have to include font-weight?
-    line-height: 44px;
-    margin: -30px 0 5px 0;
-}
-
-#socialmedia-header {
-    font-size: 29px;
-    line-height: 44px;
-    font-weight: bold; why do you have to include font-weight?
-    margin-top: 40px;
-}
-
-#contact a {
-    text-decoration: none;
-    color: #c49075;
-    font-size: 28px;
-    font-weight: bold; I still don't get why font-weight is prompted for?
-    
-}
-
-#contact ul {
-    list-style: none;
-}
-
-#contact ul li {
-    display: inline-block;
-}
-
-#contact ul img {
-    font-size: 32px;
-    padding-right: 32px; 
-}
-*/
