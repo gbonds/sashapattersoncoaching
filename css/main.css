@@ -1,4 +1,4 @@
-/* OVERRIDES */
+/*** OVERRIDES ***/
 h1, h2, h3, h4, p, figure {
     margin: 0;
     /* overrides default margins */
@@ -152,37 +152,82 @@ p {
     padding-bottom: 30px;
 }
 
-/** CONTACT **/
+/* FOOTER */
+/*---------- CONTACT ---------*/
 #contact {
     background-color: #ebebeb;
 }
 
-#contact .full-width {
-    padding: 110px 0;
+#contact .content-container {
+    padding: 50px; /* matches padding for sections */
 }
 
+#contact .content-item {
+    margin-bottom: 50px;
+}
+
+#contact-info {
+    width: 95%;
+}
+
+#contact-info h3 {
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+#email-header {
+    margin-top: 25px;
+    font-weight: 400; /* overrides default bold weight for h3 */
+}
+
+#contact-info a {
+    text-decoration: none;
+    color: #c49075;
+    font-size: 1.75em;
+}
+
+#socialmedia-header {
+    margin-top: 50px;
+}
+
+#contact-info ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    width: 45%;
+}
+
+#contact-info ul i {
+    font-size: 2.5em;
+}
+
+#contact-image {
+    width: 95%;
+}
+
+#contact-image img {
+    width: 100%;
+    border: 12px solid #ffffff;
+}
+
+/*---------- COPYRIGHT ---------*/
+
+#copyright {
+    text-align: center;
+}
+
+
+
+/*--------------- OLD CODE TO BE UPDATED -------------------*/
+/*
 #contact-img { 
     border: 12px solid #ffffff;
-    margin-left: 25px;
 }
 
 #contact img {
     width: 100%;
 }
 
-/*#contact-cta {  did this instead of selecting each element individually, but that caused social media icons to be slightly offset right.
-    margin-left: 100px;
-    width: 400px;
-} */
-
-#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
-    padding-left: 115px;
-}
-
-#envelope-img {  /*deviates from solution code but appears fine.*/
-    /*padding-right: 10px; this was the old padding I set when using contact-cta div to format*/
-    padding: 0 10px 0 115px;
-}
 
 #contact h2 {
     font-family: 'Lora', serif;
@@ -192,7 +237,7 @@ p {
 
 #email-header {
     font-size: 32px;
-    font-weight: 400; /*why do you have to include font-weight?*/
+    font-weight: 400; why do you have to include font-weight?
     line-height: 44px;
     margin: -30px 0 5px 0;
 }
@@ -200,7 +245,7 @@ p {
 #socialmedia-header {
     font-size: 29px;
     line-height: 44px;
-    font-weight: bold; /*why do you have to include font-weight?*/
+    font-weight: bold; why do you have to include font-weight?
     margin-top: 40px;
 }
 
@@ -208,7 +253,7 @@ p {
     text-decoration: none;
     color: #c49075;
     font-size: 28px;
-    font-weight: bold; /*I still don't get why font-weight is prompted for?*/
+    font-weight: bold; I still don't get why font-weight is prompted for?
     
 }
 
@@ -222,5 +267,6 @@ p {
 
 #contact ul img {
     font-size: 32px;
-    padding-right: 32px; /*deviates from solution code in order to fit on page*/
+    padding-right: 32px; 
 }
+*/
