@@ -55,6 +55,10 @@ header::after {
     font-size: 2em;
 }
 
+.navbar-container nav {
+    width: 40%;
+}
+
 .navbar-container ul {
     display: flex;
     justify-content: space-between;
@@ -65,7 +69,7 @@ nav ul li a {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 1em;
-    color: #828282;
+    color: hsl(0, 0%, 50%);
     margin-left: 15px;
 }
 
@@ -80,26 +84,28 @@ nav ul li a {
     font-family: 'Lora', serif;
     font-size: 4.5em;
     line-height: 1.5em;
-    color: #9b9b9b;
+    color: hsl(0, 0%, 50%);
 }
 
 .hero-container h2 span {
-    color: #2b2b2b;
+    color: hsl(0, 0%, 20%);
 }
 
 .hero-container h3 {
     width: 90%;
     font-size: 2em;
+    font-family: 'Lora', serif;
     line-height: 1.5em;
     font-weight: normal;
-    color: #2b2b2b;
+    color: hsl(0, 0%, 25%);
     margin-top: 50px;
 }
 
 /*** GENERAL SECTION STYLING ***/
 
 section {
-    padding: 50px;
+    padding: 75px 50px 50px;
+    /* footer #contact .content-container should match this above padding */
 }
 
 .content-container {
@@ -107,7 +113,6 @@ section {
     justify-content: space-around;
     align-items: flex-start;
     flex-flow: row wrap;
-    margin: 25px 0;
 }
 
 h2 {
@@ -134,11 +139,12 @@ p {
 /* WORK */
 
 #work {
-    background-color: #f9ceb7;
+    background-color: rgb(251,178,172,.75);
 }
 
 #work h2 {
     text-align: center;
+    margin-bottom: 25px;
 }
 
 #work .content-container {
@@ -175,8 +181,8 @@ p {
 }
 
 #contact .content-container {
-    padding: 50px;
-    /* matches padding for sections */
+    padding: 75px 50px 50px;
+    /* above padding should be the same as sections */
 }
 
 #contact .content-item {
@@ -185,6 +191,10 @@ p {
 
 #contact-info {
     width: 95%;
+}
+
+#email-header, #contact-info a {
+    margin-left: 25px;
 }
 
 #contact-info h3 {
@@ -200,7 +210,7 @@ p {
 
 #contact-info a {
     text-decoration: none;
-    color: #c49075;
+    color:hsl(5, 80%, 75%);
     font-size: 1.75em;
 }
 
