@@ -99,7 +99,7 @@ section {
 
 h2 {
     font-family: 'Lora', serif;
-    font-size: 2.25em;
+    font-size: 2.75em;
 }
 
 p {
@@ -123,24 +123,28 @@ p {
     background-color: #f9ceb7;
 }
 
-#work .content-container {
-    margin-top: 50px;
-}
-
-#work .content-item {
-    width: 30%;
+#work h2 {
     text-align: center;
 }
 
+#work .content-container {
+    /* margin-top: 50px; */
+}
+
+#work .content-item {
+    width: 55%;
+    text-align: center;
+    margin: 50px 25px;
+}
+
 #work h3 {
-    font-size: 1.5em;
+    font-size: 2em;
     line-height: 1.5em;
     margin-bottom: 10px;
 }
 
 #work p {
     font-family: 'Lora', serif;
-    font-size: 1em;
 }
 
 .fontawesome-icon i {
