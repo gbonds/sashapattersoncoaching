@@ -248,6 +248,13 @@ p {
 
 #copyright {
     text-align: center;
+    color: hsl(0, 0%, 25%);
+    /* same color as hero h3 */
+    padding: 25px;
+}
+
+#copyright p {
+    font-size: 1.25em;
 }
 
 /* ==========================================================================
@@ -255,14 +262,37 @@ p {
    ========================================================================== */
 
 @media only screen and (min-width: 1200px) {
+
+    
+    /* DESKTOP NAVBAR */
+    .navbar-container h1 {
+        font-size: 2.25em;
+    }
+
+    nav ul li a {
+        font-size: 1.25em;
+    }
+    
     /* DESKTOP ABOUT */
     #about .content-item {
         width: 40%;
     }
 
+    #about p {
+        font-size: 1.25em;
+    }
+
     /* DESKTOP WORK */
     #work .content-item {
         width: 25%;
+    }
+
+    #work h3 {
+        font-size: 1.5em;
+    }
+
+    #work p {
+        font-size: 1em;
     }
 
     /* DESKTOP CONTACT */
@@ -272,6 +302,18 @@ p {
     
     #contact .content-item {
         width: 40%;
+    }
+
+    #email-header, #contact-info a {
+        margin: 0;
+    }
+
+    #contact-info a {
+        font-size: 1.5em;
+    }
+
+    #contact-info ul {
+        width: 90%;
     }
 
 }
