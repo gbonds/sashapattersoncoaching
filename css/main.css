@@ -79,11 +79,26 @@ nav ul li a {
     color: hsl(0, 0%, 35%);
     /* same color as hero h2, but adjusted lightness from 50% to darker */
     margin-left: 15px;
+    position: relative;
+    /* above position is for hover animation. source: https://paulund.co.uk/css-animation-link-underline */
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-    transition: 1s ease-in;
+nav ul li a:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: hsl(0, 0%, 35%);
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+}
+
+nav ul li a:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
 }
 
 /*---------- HERO ---------*/
@@ -269,58 +284,44 @@ p {
    ========================================================================== */
 
 @media only screen and (min-width: 1200px) {
-
-    
     /* DESKTOP NAVBAR */
     .navbar-container h1 {
         font-size: 2.25em;
     }
-
     nav ul li a {
         font-size: 1.25em;
     }
-    
     /* DESKTOP ABOUT */
     #about .content-item {
         width: 40%;
     }
-
     #about p {
         font-size: 1.25em;
     }
-
     /* DESKTOP WORK */
     #work .content-item {
         width: 25%;
     }
-
     #work h3 {
         font-size: 1.5em;
     }
-
     #work p {
         font-size: 1em;
     }
-
     /* DESKTOP CONTACT */
     #contact .content-container {
         flex-flow: row-reverse wrap;
     }
-    
     #contact .content-item {
         width: 40%;
     }
-
     #email-header, #contact-info a {
         margin: 0;
     }
-
     #contact-info a {
         font-size: 1.5em;
     }
-
     #contact-info ul {
         width: 90%;
     }
-
 }
