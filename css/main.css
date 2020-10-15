@@ -75,8 +75,15 @@ nav ul li a {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 1em;
-    color: hsl(0, 0%, 50%);
+    line-height: 1.25em;
+    color: hsl(0, 0%, 35%);
+    /* same color as hero h2, but adjusted lightness from 50% to darker */
     margin-left: 15px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    transition: 1s ease-in;
 }
 
 /*---------- HERO ---------*/
